@@ -25,17 +25,17 @@ contract TieredProfitSplitter {
         // @TODO: Calculate and transfer the distribution percentage
         amount = points * 60;
         total += amount;
-        employeeOne.transfer(amount);
+        employee_one.transfer(amount);
         
         amount = points * 25;
         total += amount;
-        employeeTwo.transfer(amount);
+        employee_two.transfer(amount);
         
         amount = points * 15;
         total += amount;
-        employeeThree.transfer(amount);
+        employee_three.transfer(amount);
 
-        employeeOne.transfer(msg.value - total); // ceo gets the remaining wei
+        employee_one.transfer(msg.value - total); // ceo gets the remaining wei
     }
 
     function() external payable {
