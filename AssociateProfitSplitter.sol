@@ -7,7 +7,6 @@ contract AssociateProfitSplitter {
     address payable employeeTwo;
     address payable employeeThree;
     
-
     constructor(address payable _one, address payable _two, address payable _three) public {
         employee_one = _one;
         employee_two = _two;
@@ -34,6 +33,6 @@ contract AssociateProfitSplitter {
 
     function() external payable {
         // @TODO: Enforce that the `deposit` function is called in the fallback function!
-        // Your code here!
+        deposit();
     }
 }
