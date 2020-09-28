@@ -2,7 +2,11 @@ pragma solidity ^0.5.0;
 
 // lvl 1: equal split
 contract AssociateProfitSplitter {
-    // @TODO: Create three payable addresses representing `employee_one`, `employee_two` and `employee_three`.
+    // @TODO: Create three payable addresses representing `employeeOne`, `employeeTwo` and `employeeThree`.
+    address payable employeeOne;
+    address payable employeeTwo;
+    address payable employeeThree;
+    
 
     constructor(address payable _one, address payable _two, address payable _three) public {
         employee_one = _one;
@@ -16,13 +20,16 @@ contract AssociateProfitSplitter {
 
     function deposit() public payable {
         // @TODO: Split `msg.value` into three
-        uint amount = ; // Your code here!
+        uint amount = msg.value / 3;
 
         // @TODO: Transfer the amount to each employee
-        // Your code here!
+        employeeOne.transfer(amount);
+        employeeTwo.transfer(amount);
+        employeeThree.transfer(amount);
 
         // @TODO: take care of a potential remainder by sending back to HR (`msg.sender`)
-        // Your code here!
+        uint leftoverAmount = msg.value - amount * 3;
+        msg.sender.transfer(leftoverAmount);
     }
 
     function() external payable {
