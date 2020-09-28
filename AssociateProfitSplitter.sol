@@ -8,9 +8,9 @@ contract AssociateProfitSplitter {
     address payable employeeThree;
     
     constructor(address payable _one, address payable _two, address payable _three) public {
-        employee_one = _one;
-        employee_two = _two;
-        employee_three = _three;
+        employeeOne = _one;
+        employeeTwo = _two;
+        employeeThree = _three;
     }
 
     function balance() public view returns(uint) {
