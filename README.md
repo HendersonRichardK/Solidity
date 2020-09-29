@@ -7,7 +7,6 @@ In this case study, there were three solidity smart contracts created and deploy
 ## `AssociateProfitSplitter` 
 
 Contract Address: 0x8f698bb87b7124deBc1fB9a4f80116626Aa76530 on Kovan Testnet.
-
 Profits are allocated amongst employees and owners. Transactions were excuted through Metamask, testing was performed using the Ganache Development chain. 
 
 ## `TieredProfitSplitter` 
