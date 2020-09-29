@@ -2,7 +2,7 @@
 
 ![contract](https://github.com/HendersonRichardK/Solidity/blob/master/Images/SmartContracts.png)
 
-In this case study, there were three solidity smart contracts created and deployed on the Ropsten Test Network. The smart contracts were designed to automate company's finances. For each contract there are rules implemented to ensure rules and guidelines are followed. 
+In this case study, there were three solidity smart contracts created and deployed on the Kovan Test Network. The smart contracts were designed to automate company's finances. For each contract there were rules implemented to ensure rules and guidelines are followed. 
 
 ## `AssociateProfitSplitter` 
 
