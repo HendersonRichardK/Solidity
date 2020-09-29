@@ -18,4 +18,4 @@ Allocates profits based on position held within a specific company. The Senior, 
 ## `DeferredEquityPlan` 
 
 Contract Address:  0xF8224d81AaF2b5209a9592E5C58f88F201a27551 on Kovan Testnet. 
-A incentive plan where employees can invest 1000 shares of the company over a 4 year period. Testing was performed using the Ganache Development chain. 
+A incentive plan where employees can invest 1000 shares over a four year period. Testing was performed using the Ganache Development chain. 
